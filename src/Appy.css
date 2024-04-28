@@ -1,0 +1,304 @@
+/*body {
+  padding: 0;
+  margin: 0;
+  background-color: #000!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+.background {
+  background-image: url('./leaves.webp'); /* Path to your background image */
+  background-size: cover; /* Cover the entire element */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+.BGVD {
+  width: 100%;
+  height: 100vh;
+}
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #d6f7e1;
+  margin: 0;
+}
+
+.app {
+  padding: 1rem;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chef-info {
+  position: fixed;
+  top: 15px;
+  right: 130px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.chef-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Additional styling for the message */
+.chef-message {
+  color: #ffffff;
+}
+
+.log-out {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.waiter-call {
+  position: fixed;
+  top: 15px;
+  right: 700px;
+  display: flex;
+  align-items: center;
+}
+
+p{
+  color:hsl(120, 71%, 79%);
+}
+
+h1 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: hsl(120, 71%, 79%);
+  font-size: 30px;
+  font-weight: bold!important;
+  font-family: 'palatino', serif;
+  letter-spacing: 0px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+h1 {
+  padding: -0px;
+  background: linear-gradient(to right, hsl(227, 94%, 49%) 0, hsl(0, 0%, 100%) 10%, hsl(264, 56%, 31%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+} 
+
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #f9d3b4;
+  font-family: var(--font-raleway);
+}
+
+.container {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.movie {
+  width: 310px;
+  height: 300px;
+  margin: 1.5rem;
+
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.movie div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  color: #070707;
+}
+
+
+
+.movie div:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.movie div:nth-of-type(2) img {
+  height: 100%;
+  width: 100%;
+}
+
+.movie div:nth-of-type(3) {
+  z-index: 2;
+  background-color: #343739;
+  padding: 16px 24px 24px 24px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.movie div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.movie div:nth-of-type(3) h3 {
+  margin-top: 5px;
+  font-family: "Roboto Slab", serif;
+  color: #f9d3b4;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: "100%";
+    margin: 5rem;
+  }
+
+  h1{
+    position: absolute;
+    font-size: 1.5rem;
+  }
+
+  .chef-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .chef-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: none;
+  }
+
+  .log-out button,
+  .waiter-call button {
+    padding: 3px 7px; 
+    
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1 {
+    position: fixed;
+    font-size: 22px;
+  }
+
+  
+
+  .container {
+    width: "100%";
+    margin: 5rem;
+    top: 20px;
+    left: 20px;
+  }
+
+  .movie {
+    width: "100%";
+    margin: 1rem;
+  }
+  .log-out{
+    position: fixed;
+  }
+  .waiter-call{
+    position: fixed;
+  }
+}
+

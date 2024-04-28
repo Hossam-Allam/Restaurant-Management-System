@@ -1,0 +1,44 @@
+.stat1 {
+    position: absolute;
+    top: 100px;
+    left: 5%; 
+    
+}
+
+.stat2{
+    position: absolute;
+    top: 450px;
+    left: 7.5%;
+}
+
+.stat3 {
+    position: absolute;
+    top: 200px;
+    right: 10%;
+}
+
+.divider {
+    position: absolute;
+    top: 170px;
+    
+}
+
+.divider2 {
+    position: absolute;
+    top:100px;
+}
+
+.insights {
+    position: absolute;
+    top: 100px;
+    right: 30%;
+}
+
+.RevChart {
+    width: 700px; 
+    height: 700px; 
+    position: absolute; 
+    top: 400px; 
+    right: 75px; 
+    z-index: -1;
+  }

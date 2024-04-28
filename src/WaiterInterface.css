@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+.background {
+  background-image: url('./leaves.webp'); /* Path to your background image */
+  background-size: cover; /* Cover the entire element */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+.BGVD {
+  width: 100%;
+  height: 100vh;
+}
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #d6f7e1;
+  margin: 0;
+}
+
+.app {
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chef-info {
+  position: absolute;
+  top: 15px;
+  right: 130px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.chef-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Waiter-buttons{
+    position: absolute;
+    top: 50px;
+    right: 700px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Additional styling for the message */
+.chef-message {
+  color: #ffffff;
+}
+
+.log-out {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.waiter-call {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+p{
+  color:hsl(120, 71%, 79%);
+}
+
+h1 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: hsl(120, 71%, 79%);
+  font-size: 30px;
+  font-weight: bold!important;
+  font-family: 'palatino', serif;
+  letter-spacing: 0px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+h1 {
+  padding: -0px;
+  background: linear-gradient(to right, hsl(227, 94%, 49%) 0, hsl(0, 0%, 100%) 10%, hsl(264, 56%, 31%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+} 
+
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #f9d3b4;
+  font-family: var(--font-raleway);
+}
+
+.container {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: -1;
+} 
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: "100%";
+    margin: 5rem;
+  }
+
+  .h1{
+    position: absolute;
+    font-size: 1px;
+    top: 20px;
+    left: 20px;
+  }
+
+
+  .chef-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .chef-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: none;
+  }
+
+  .log-out button,
+  .waiter-call button {
+    padding: 3px 7px; 
+    
+  }
+
+  .chef-message{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1 {
+    position: fixed;
+    font-size: 22px;
+  }
+
+  
+
+  .container {
+    width: "100%";
+    margin: 5rem;
+    top: 20px;
+    left: 20px;
+  }
+
+  .movie {
+    width: "100%";
+    margin: 1rem;
+  }
+  .log-out{
+    position: fixed;
+  }
+}
+
+
+

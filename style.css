@@ -1,0 +1,15 @@
+body 
+{
+	background-color: black;
+}
+#main {
+	display: flex;
+	align-items: flex-start;
+	
+}
+#title
+{
+	color:gold;
+	font-family: "Times New Roman", Times, serif;
+	align-self: center;
+}
